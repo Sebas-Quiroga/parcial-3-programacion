@@ -1,0 +1,385 @@
+{
+  "info": {
+    "name": "EstructuraDatos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Categoria",
+      "item": [
+        {
+          "name": "Save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\":\"Camioneta\",\n  \"descripcion\":\"Carros el campo.\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9000/api/categoria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "categoria"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/categoria",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "categoria"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\":\"Camioneta\",\n  \"descripcion\":\"Carros el campo\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9000/api/categoria/2",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "categoria", "2"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/categoria/2",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "categoria", "2"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Persona",
+      "item": [
+        {
+          "name": "Save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tipoDocumento\":\"CC\",\n  \"documento\":\"4673242\",\n  \"nombre\":\"Pepita Perez\",\n  \"telefono\":\"312243\",\n  \"direccion\":\"Calle 21\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9000/api/persona",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "persona"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/persona",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "persona"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tipoDocumento\":\"CC\",\n  \"documento\":\"121321\",\n  \"nombre\":\"Sofia\",\n  \"telefono\":\"3144532\",\n  \"direccion\":\"Calle 22\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9000/api/persona/4",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "persona", "4"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/persona/4",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "persona", "4"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/persona/4",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "persona", "4"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Usuario",
+      "item": [
+        {
+          "name": "Save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"correo\":\"datos@gmailc.om\",\n  \"contrasenia\":\"478323\",\n  \"personaId\":{\n    \"id\":1\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9000/api/usuario",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "usuario"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/usuario",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "usuario"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"correo\":\"prueba@gmail.om\",\n  \"contrasenia\":\"46873242\",\n  \"personaId\":{\n    \"id\":5\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9000/api/usuario/3",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "usuario", "3"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/usuario/4",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "usuario", "4"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/usuario/2",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "usuario", "2"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Carro",
+      "item": [
+        {
+          "name": "Save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"marca\":\"Nissan\",\n  \"modelo\":\"202\",\n  \"color\":\"Gis\",\n  \"placa\":\"HF\",\n  \"categoriaId\":{\n    \"id\":2\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9000/api/carro",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "carro"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/carro",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "carro"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"marca\":\"Toyota\",\n  \"modelo\":\"201\",\n  \"color\":\"Negro\",\n  \"placa\":\"FJ\",\n  \"categoriaId\":{\n    \"id\":1\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9000/api/carro/3",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "carro", "3"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/carro/2",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "carro", "2"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9000/api/carro/2",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "9000",
+              "path": ["api", "carro", "2"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
